@@ -1,0 +1,213 @@
+:root {
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+"Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+"Segoe UI Symbol";
+font-size: 18px;
+scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+body {
+font-weight: 400;
+font-size: 1rem;
+line-height: 1.5;
+text-rendering: optimizeSpeed;
+}
+
+body,
+h2,
+h3,
+p {
+margin-bottom: 1rem;
+}
+
+h1 {
+font-size: 2rem;
+line-height: 1.2;
+margin-bottom: 1rem;
+}
+
+.imp {
+font-weight: 700;
+color: #0074e0;
+}
+
+header {
+display: flex;
+justify-content: space-between;
+padding: 1rem;
+}
+
+footer {
+padding: 1rem;
+background-color: rgb(38, 50, 56);
+}
+
+footer p {
+font-size: 0.5rem;
+color: #ffff;
+}
+footer a {
+color: #ffff;
+padding: 1rem;
+}
+
+.footer-menu {
+display: flex;
+justify-content: center;
+}
+
+main img {
+display: block;
+max-width: 100%;
+margin-bottom: 1rem;
+height: auto;
+}
+
+.container {
+padding: 0 1rem;
+max-width: 42rem;
+margin: 0 auto;
+}
+
+.copyright {
+margin-bottom: 0;
+font-size: 1rem;
+padding-top: 1rem;
+text-align: center;
+}
+
+.button {
+display: block;
+width: 100%;
+padding: 15px 0px;
+margin-bottom: 1.125rem;
+border-radius: 3px;
+text-align: center;
+background-color: #49b74e;
+border-color: transparent;
+color: white;
+font-weight: 700;
+font-size: 1.5rem;
+text-decoration: none;
+cursor: pointer;
+}
+
+.divider {
+padding-top: 3rem;
+padding-bottom: 3rem;
+}
+
+.tp-badge {
+margin: 0 auto;
+}
+@media only screen and (max-width: 600px) {
+h1 {
+font-size: 1.7rem;
+}
+h2 {
+font-size: 1.5rem;
+}
+p {
+font-size: 1rem;
+letter-spacing: normal;
+line-height: 1.5;
+font-weight: 400;
+margin-bottom: 1rem;
+}
+.tp-badge {
+width: 300px;
+}
+}
+
+.text-center {
+text-align: center;
+}
+
+.boxme {
+text-align: center;
+padding: 20px 34px;
+background-color: #fff;
+border-top: 5px solid #26830f;
+font-size: 14px;
+line-height: 1.75;
+font-weight: 400;
+box-shadow: 0 0 7px 0 rgb(0 0 0/20%);
+transition: all 0.2s ease;
+}
+
+.boxme h5 {
+text-align: center;
+font-size: 1.5rem;
+line-height: 2.5rem;
+margin: 0.5em 0;
+}
+
+@keyframes fade-in {
+0% {
+opacity: 0;
+}
+
+100% {
+opacity: 1;
+}
+}
+
+@keyframes fade-out {
+0% {
+opacity: 1;
+}
+
+100% {
+opacity: 0;
+}
+}
+
+.fade-in {
+animation: fade-in;
+animation-duration: 0.5s;
+}
+
+.fade-out {
+animation: fade-out;
+animation-duration: 0.5s;
+}
+
+#q2,
+#loading1,
+#loading2,
+#loading3,
+#qualify,
+#dontqualify {
+display: none;
+}
+
+.pulsing {
+/* transform:scale(1);
+*/
+animation: pulsing infinite;
+}
+
+@keyframes pulsing {
+0% {
+transform: scale(1);
+box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+}
+
+70% {
+transform: scale(1.034);
+box-shadow: 0 0 0 10px transparent;
+}
+
+100% {
+transform: scale(1);
+box-shadow: 0 0 0 0 transparent;
+}
+}
